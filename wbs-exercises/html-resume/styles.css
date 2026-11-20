@@ -96,9 +96,25 @@ section > ul > li:has(h3) {
     margin-left: -1.25rem;
 }
 
+ul > li > span {
+    color: #5eead4;
+    text-decoration: none;
+}
+
 p {
     margin: 0.25rem 0 0.5rem;
 }
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: flex-end;
+}
+.vertical-line {
+    border-left: 2px solid rgb(254, 254, 254);
+    height: 80px;
+  }
 
 @media (max-width: 600px) {
     header {
@@ -113,4 +129,16 @@ p {
     section {
         padding: 1rem;
     }
+
+    .contact-info {
+     display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+    .vertical-line {
+        display: none;
+  }
 }
