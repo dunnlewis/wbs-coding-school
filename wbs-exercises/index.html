@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects Bundle Overview</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="m-2 box-border bg-[radial-gradient(var(--color-teal-200),var(--color-white))] pl-1 font-[Arial,Helvetica,sans-serif] text-green-900">
+    <header class="grid grid-cols-1 justify-center mt-1 p-3 text-center">
+        <figure>
+            <img src="./pic300.png" class="mx-auto block" width="300" alt="Your PIC">
+            <figcaption></figcaption>
+        </figure>
+        <h1 class="mt-1 font-bold">Bundle</h1>
+        <p class="mt-1">
+            You're on the entrance page of my Repository where I've bundled some coding projects. Please follow the
+            links to see the content of a specific project
+        </p>
+    </header>
+    <main class="mx-auto p-3 justify-center text-center">
+        <ul id="project"></ul>
+    </main>
+
+    <script>
+    /* Just added some of your projects, it create a link in the ul above with the ID=project. Maybe you can use it when you make the pages thing*/
+  const projects = [
+    {path: 'html-resume',text: 'HTML: Resume'},
+    {path: 'html-coffee-shop',text: 'HTML: Coffee Shop'},
+    {path: 'html-flexbox-layout',text: 'HTML: Flexbox Layout'},
+  ];
+  const liste = document.querySelector("#project");
+
+    for (const page of projects) {
+      const li = document.createElement("li");
+      const link = document.createElement("a");
+
+      link.href = page.path;
+      link.textContent = page.text;
+      link.target = '_blank';
+      link.className =
+        "block rounded-xl bg-white p-5 font-medium shadow-sm transition hover:-translate-y-0.5 hover:shadow-md";
+      li.append(link);
+      liste.append(li);
+    }
+</script>
+    
+</body>
+</html>
