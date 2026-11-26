@@ -5,125 +5,147 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ActiveBox</title>
     <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-brand: #ee4b4b;
+        --color-navy: #393c66;
+        --color-plum: #4f3350;
+      }
+    </style>
   </head>
-  <body>
-    <header>
-      <a href="#top"><img src="src/images/logo.png" alt="ActiveBox" /></a>
-      <nav>
-        <ul>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#works">Works</a></li>
-          <li><a href="#team">Our Team</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="#download">Download</a></li>
-        </ul>
-      </nav>
-    </header>
+  <body class="text-gray-800">
+    <div id="top" class="min-h-[750px] bg-[url(src/images/banner.jpg)] bg-cover bg-top text-white">
+      <header class="mx-auto max-w-285 px-4">
+        <div class="flex items-center justify-between border-b border-white/10 py-5">
+          <a href="#top"><img src="src/images/logo.png" alt="ActiveBox" /></a>
+          <nav>
+            <ul class="flex gap-8 text-[10px] font-bold uppercase">
+              <li><a href="#features">Features</a></li>
+              <li><a href="#works">Works</a></li>
+              <li><a href="#team">Our Team</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+              <li><a href="#download">Download</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
 
-    <main id="top">
-      <section class="hero">
-        <h1>Your favorite one page multi purpose template</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <a href="#features">Find out more</a>
-      </section>
+      <main class="mx-auto flex max-w-3xl flex-col items-center gap-6 px-4 pt-[15%] text-center md:pt-40">
+        <h1 class="font-['Open_Sans'] text-4xl font-bold uppercase leading-tight md:text-5xl">Your favorite one page multi purpose template</h1>
+        <p class="text-lg font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna vel scelerisque nisl consectetur et.</p>
+        <a href="#features" class="mt-8 bg-brand px-10 py-3 text-[10px] font-bold uppercase hover:opacity-90">Find out more</a>
+      </main>
+    </div>
 
-      <section id="features">
-        <article>
-          <h2>Easily customised</h2>
-          <p>Cras justo odio, dapibus ac facilisis in.</p>
+    <section id="features" class="mx-auto grid max-w-285 grid-cols-1 gap-x-8 gap-y-16 px-8 py-24 md:grid-cols-2 lg:grid-cols-3">
+        <article class="flex flex-col items-center text-center gap-3">
+          <span class="icon icon-tools text-brand"></span>
+          <h5 class="text-xs font-bold uppercase text-gray-800">Easily customised</h5>
+          <p class="text-xs leading-relaxed text-gray-500">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
         </article>
-        <article>
-          <h2>Responsive ready</h2>
-          <p>Cras justo odio, dapibus ac facilisis in.</p>
+        <article class="flex flex-col items-center text-center gap-3">
+          <span class="icon icon-desktop text-brand"></span>
+          <h5 class="text-xs font-bold uppercase text-gray-800">Responsive ready</h5>
+          <p class="text-xs leading-relaxed text-gray-500">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
         </article>
-        <article>
-          <h2>Modern design</h2>
-          <p>Cras justo odio, dapibus ac facilisis in.</p>
+        <article class="flex flex-col items-center text-center gap-3">
+          <span class="icon icon-lightbulb text-brand"></span>
+          <h5 class="text-xs font-bold uppercase text-gray-800">Modern design</h5>
+          <p class="text-xs leading-relaxed text-gray-500">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
         </article>
-        <article>
-          <h2>Clean code</h2>
-          <p>Cras justo odio, dapibus ac facilisis in.</p>
+        <article class="flex flex-col items-center text-center gap-3">
+          <span class="icon icon-genius text-brand"></span>
+          <h5 class="text-xs font-bold uppercase text-gray-800">Clean code</h5>
+          <p class="text-xs leading-relaxed text-gray-500">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
         </article>
-        <article>
-          <h2>Ready to ship</h2>
-          <p>Cras justo odio, dapibus ac facilisis in.</p>
+        <article class="flex flex-col items-center text-center gap-3">
+          <span class="icon icon-briefcase text-brand"></span>
+          <h5 class="text-xs font-bold uppercase text-gray-800">Ready to ship</h5>
+          <p class="text-xs leading-relaxed text-gray-500">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
         </article>
-        <article>
-          <h2>Download for free</h2>
-          <p>Cras justo odio, dapibus ac facilisis in.</p>
+        <article class="flex flex-col items-center text-center gap-3">
+          <span class="icon icon-download text-brand"></span>
+          <h5 class="text-xs font-bold uppercase text-gray-800">Download for free</h5>
+          <p class="text-xs leading-relaxed text-gray-500">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
         </article>
-      </section>
+    </section>
 
-      <section id="works">
-        <h2 hidden>Works</h2>
-        <figure><img src="src/images/work-1.jpg" alt="Project 1" /></figure>
-        <figure><img src="src/images/work-2.jpg" alt="Project 2" /></figure>
-        <figure><img src="src/images/work-3.jpg" alt="Project 3" /></figure>
-        <figure><img src="src/images/work-4.jpg" alt="Project 4" /></figure>
-        <figure><img src="src/images/work-5.jpg" alt="Project 5" /></figure>
-        <figure><img src="src/images/work-6.jpg" alt="Project 6" /></figure>
-        <figure><img src="src/images/work-7.jpg" alt="Project 7" /></figure>
-        <figure><img src="src/images/work-8.jpg" alt="Project 8" /></figure>
-      </section>
+    <section id="works" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0.5">
+      <h2 hidden>Works</h2>
+        <figure><img class="block w-full" src="src/images/work-1.jpg" alt="Project 1" /></figure>
+        <figure><img class="block w-full" src="src/images/work-2.jpg" alt="Project 2" /></figure>
+        <figure><img class="block w-full" src="src/images/work-3.jpg" alt="Project 3" /></figure>
+        <figure><img class="block w-full" src="src/images/work-4.jpg" alt="Project 4" /></figure>
+        <figure><img class="block w-full" src="src/images/work-5.jpg" alt="Project 5" /></figure>
+        <figure><img class="block w-full" src="src/images/work-6.jpg" alt="Project 6" /></figure>
+        <figure><img class="block w-full" src="src/images/work-7.jpg" alt="Project 7" /></figure>
+        <figure><img class="block w-full" src="src/images/work-8.jpg" alt="Project 8" /></figure>
+    </section>
 
-      <section id="team">
-        <h2 hidden>Our Team</h2>
-        <article>
-          <img src="src/images/team-1.jpg" alt="Ruth Woods" />
-          <h3>Ruth Woods</h3>
-          <p>Founder, CEO</p>
+    <section id="team" class="mx-auto grid max-w-285 grid-cols-1 gap-8 px-4 py-20 md:grid-cols-2 lg:grid-cols-4">
+      <h2 hidden>Our Team</h2>
+        <article class="flex flex-col gap-2">
+          <img class="w-full" src="src/images/team-1.jpg" alt="Ruth Woods" />
+          <h3 class="mt-4 text-lg font-light text-gray-800">Ruth Woods</h3>
+          <h6 class="text-[10px] font-bold uppercase text-brand">Founder, CEO</h6>
+          <p class="text-xs leading-relaxed text-gray-500">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
         </article>
-        <article>
-          <img src="src/images/team-2.jpg" alt="Timothy Reed" />
-          <h3>Timothy Reed</h3>
-          <p>Co-founder, Developer</p>
+        <article class="flex flex-col gap-2">
+          <img class="w-full" src="src/images/team-2.jpg" alt="Timothy Reed" />
+          <h3 class="mt-4 text-lg font-light text-gray-800">Timothy Reed</h3>
+          <h6 class="text-[10px] font-bold uppercase text-brand">Co-founder, Developer</h6>
+          <p class="text-xs leading-relaxed text-gray-500">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
         </article>
-        <article>
-          <img src="src/images/team-3.jpg" alt="Victoria Valdez" />
-          <h3>Victoria Valdez</h3>
-          <p>UI Designer</p>
+        <article class="flex flex-col gap-2">
+          <img class="w-full" src="src/images/team-3.jpg" alt="Victoria Valdez" />
+          <h3 class="mt-4 text-lg font-light text-gray-800">Victoria Valdez</h3>
+          <h6 class="text-[10px] font-bold uppercase text-brand">UI Designer</h6>
+          <p class="text-xs leading-relaxed text-gray-500">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
         </article>
-        <article>
-          <img src="src/images/team-4.jpg" alt="Beverly Little" />
-          <h3>Beverly Little</h3>
-          <p>Data Scientist</p>
+        <article class="flex flex-col gap-2">
+          <img class="w-full" src="src/images/team-4.jpg" alt="Beverly Little" />
+          <h3 class="mt-4 text-lg font-light text-gray-800">Beverly Little</h3>
+          <h6 class="text-[10px] font-bold uppercase text-brand">Data Scientist</h6>
+          <p class="text-xs leading-relaxed text-gray-500">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
         </article>
-      </section>
+    </section>
 
-      <section id="testimonials">
-        <h2 hidden>Testimonials</h2>
-        <img src="src/images/testimonial-1.jpg" alt="Susan Sims" />
-        <blockquote>
-          <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
-          <footer>Susan Sims, Interaction Designer at XYZ</footer>
-        </blockquote>
-      </section>
+    <section id="testimonials" class="grid grid-cols-1 bg-plum text-white md:grid-cols-2">
+      <h2 hidden>Testimonials</h2>
+      <img class="h-full min-h-100 w-full object-cover" src="src/images/testimonial-1.jpg" alt="Susan Sims" />
+      <blockquote class="flex flex-col justify-center gap-6 p-10 lg:px-20">
+        <p class="font-['Cardo'] text-3xl italic leading-snug">&ldquo;Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam&hellip;&rdquo;</p>
+        <footer class="text-[10px] font-bold uppercase">Susan Sims, Interaction Designer at XYZ</footer>
+      </blockquote>
+    </section>
 
-      <section id="download">
-        <h2>Are you ready to start? Download now for free!</h2>
-        <p>Fusce dapibus, tellus ac cursus commodo</p>
-        <a href="#">Download here</a>
-      </section>
-    </main>
+    <section id="download" class="flex flex-col items-center gap-4 px-4 py-20 text-center">
+      <h2 class="text-xl font-light text-gray-700">Are You Ready to Start? Download Now For Free!</h2>
+      <p class="text-[10px] font-bold uppercase text-gray-900">Fusce dapibus, tellus ac cursus commodo</p>
+      <a href="#" class="mt-4 bg-brand px-10 py-3 text-[10px] font-bold uppercase text-white hover:opacity-90">Download here</a>
+    </section>
 
-    <footer>
-      <section>
-        <h3>Location</h3>
-        <address>3481 Melrose Place<br />Beverly Hills, CA 90210</address>
-      </section>
-      <section>
-        <h3>Share with love</h3>
-        <ul>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">LinkedIn</a></li>
-        </ul>
-      </section>
-      <section>
-        <h3>About ActiveBox</h3>
-        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
-      </section>
-      <p>Copyright &copy; 2015 ActiveBox. All Rights Reserved.</p>
+    <footer class="bg-navy text-center text-xs text-white/60">
+      <div class="mx-auto grid max-w-285 grid-cols-1 gap-8 px-4 py-14 md:grid-cols-3">
+        <section>
+          <h3 class="mb-3 text-[10px] font-bold uppercase text-white">Location</h3>
+          <address class="not-italic leading-relaxed">3481 Melrose Place<br />Beverly Hills, CA 90210</address>
+        </section>
+        <section>
+          <h3 class="mb-3 text-[10px] font-bold uppercase text-white">Share with love</h3>
+          <ul class="flex justify-center gap-2">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">LinkedIn</a></li>
+          </ul>
+        </section>
+        <section>
+          <h3 class="mb-3 text-[10px] font-bold uppercase text-white">About ActiveBox</h3>
+          <p class="leading-relaxed">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus auctor fringilla.</p>
+        </section>
+      </div>
+      <p class="bg-black/15 py-5 text-[10px]">Copyright &copy; 2015 ActiveBox. All Rights Reserved.</p>
     </footer>
   </body>
 </html>
